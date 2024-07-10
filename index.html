@@ -10,18 +10,30 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
-        header {
+        header, footer {
             background-color: #003366;
             color: white;
-            padding: 10px 0;
             text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        header {
+            top: 0;
+        }
+        footer {
+            bottom: 0;
         }
         nav {
-            margin: 0;
-            padding: 10px 0;
-            text-align: center;
             background-color: #0055a5;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px; /* Adjust based on header height */
         }
         nav a {
             color: white;
@@ -33,14 +45,14 @@
             background-color: #003366;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .about-section {
-            display: flex;
-            align-items: center;
+            flex: 1;
+            overflow-y: auto;
             padding: 20px 0;
+            margin-top: 50px; /* Adjust based on header height */
+            margin-bottom: 50px; /* Adjust based on footer height */
+        }
+        .about-section, #portfolio, #projects {
+            padding: 20px 10%;
             border-bottom: 1px solid #cccccc;
         }
         .profile-pic {
@@ -48,12 +60,6 @@
             height: 150px;
             margin-right: 20px;
             border: 2px solid #0055a5;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #003366;
-            color: white;
         }
         .social-icons a {
             color: white;
