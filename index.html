@@ -27,8 +27,7 @@
             top: 0;
         }
         nav {
-            top: 60px; /* Adjust based on header height */
-            top: 134px; /* Updated based on your feedback */
+            top: 134px; /* Adjust based on header height */
             background-color: #0055a5;
         }
         footer {
@@ -50,7 +49,7 @@
             margin-top: 184px; /* Adjust based on header and nav height */
             margin-bottom: 50px; /* Adjust based on footer height */
         }
-        .about-section, #portfolio, #projects {
+        .about-section, #portfolio, #projects, #memberships {
             padding: 20px 0;
             border-bottom: 1px solid #cccccc;
         }
@@ -59,6 +58,10 @@
             height: 150px;
             margin-right: 20px;
             border: 2px solid #0055a5;
+            float: left;
+        }
+        .about-text {
+            margin-left: 180px; /* Adjust based on profile pic width and margin */
         }
         .social-icons a {
             color: white;
@@ -92,16 +95,19 @@
     <div class="container">
         <section class="about-section" id="about">
             <img src="sohan_pm.png" alt="Sohan PM" class="profile-pic">
-            <div>
+            <div class="about-text">
                 <h2>About Me</h2>
                 <p>Hi, I'm Sohan PM. I'm currently working as a research scholar in physical oceanography at the CSIR-National Institute of Oceanography, Goa. My research focuses on understanding the physical processes of the ocean and their impact on the environment. I have a keen interest in data analysis, utilizing various tools and techniques to derive meaningful insights from oceanographic data.</p>
-                <h3>Memberships</h3>
-                <ul>
-                    <li>Indian Meteorological Society (LM-3899)</li>
-                    <li>Ocean Society of India (LM-684)</li>
-                </ul>
-                <p>ORCID iD: <a href="https://orcid.org/0000-0003-3180-4792" target="_blank">0000-0003-3180-4792</a></p>
             </div>
+        </section>
+
+        <section id="memberships">
+            <h2>Memberships</h2>
+            <ul>
+                <li>Indian Meteorological Society : LM-3899</li>
+                <li>Ocean Society of India : LM-684</li>
+                <li>Mangrove Society of India : LM-XXX</li>
+                </ul>
         </section>
 
         <section id="portfolio">
@@ -118,25 +124,25 @@
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><strong>Jan - May, 2020 Postgraduate Dissertation Central University of Rajasthan, Rajasthan</strong>
+                <li><strong>Postgraduate Dissertation Central University of Rajasthan, Rajasthan (Jan - May, 2020)</strong>
                     <p>Focus: “Sensitivity Study Of Cumulus Parameterization In Simulating Tropical Cyclone “Bulbul” Over Bay Of Bengal Using WRF” under the Guidance of Dr. Jyanti Pal, Assistant Professor, Department of Atmospheric Science, Central University of Rajasthan, Rajasthan</p>
                 </li>
-                <li><strong>Jul - Dec, 2019 Literature review Central University of Rajasthan, Rajasthan</strong>
+                <li><strong>Literature review Central University of Rajasthan, Rajasthan (Jul - Dec, 2019)</strong>
                     <p>Focus: “A review of Dust storms over the Indian region” under the Guidance of Dr. Subrat Kumar Panda, Assistant Professor, Department of Atmospheric Science, Central University of Rajasthan, Rajasthan</p>
                 </li>
-                <li><strong>Jul - Dec, 2019 Simulation of Ideal Case Central University of Rajasthan, Rajasthan</strong>
+                <li><strong>Simulation of Ideal Case Central University of Rajasthan, Rajasthan (Jul - Dec, 2019)</strong>
                     <p>Focus: “Simulated Ideal case of Tropical Cyclone” using WRF-ARW” under the Guidance of Prof. Someshwar Das, Professor and Head of Department, Department of Atmospheric Science, Central University of Rajasthan, Rajasthan</p>
                 </li>
-                <li><strong>May - Jul, 2019 Internship Project National Centre for Medium Range Weather Forecasting, Noida</strong>
+                <li><strong>Internship Project National Centre for Medium Range Weather Forecasting, Noida (May - Jul, 2019)</strong>
                     <p>Focus: “Spatial Verification of Rainfall during Monsoon 2018 Over Indian Region using CRA Method under the Guidance of Dr. Anumeha Dube, Scientist-D, National Centre for Medium Range Weather Forecasting(NCMRWF), Noida</p>
                 </li>
-                <li><strong>Apr - May, 2019 IMD Visit Report India Meteorological Department, Jaipur</strong>
+                <li><strong>IMD Visit Report India Meteorological Department, Jaipur (Apr - May, 2019)</strong>
                     <p>Focus: “A Report On Jaipur Radar Operation and Observational Instruments of IMD Jaipur Visit” under the Guidance of Dr. Subrat Kumar Panda, Assistant Professor, Department of Atmospheric Science, Central University of Rajasthan, Rajasthan</p>
                 </li>
-                <li><strong>Sep - Dec, 2018 Completed Certificated Course IIRS-ISRO, Govt. Of India</strong>
+                <li><strong>Completed Certificated Course IIRS-ISRO, Govt. Of India (Sep - Dec, 2018)</strong>
                     <p>Focus: “Basics of Remote Sensing, Geographical Information System and Global Navigation Satellite System” Organised by Indian Institute of Remote Sensing, Indian Space Research Organisation, Department of Space, Govt. of India</p>
                 </li>
-                <li><strong>Jul - Dec, 2018 Visualization and Analysis of Meteorological Data Central University of Rajasthan, Rajasthan</strong>
+                <li><strong>Visualization and Analysis of Meteorological Data Central University of Rajasthan, Rajasthan (Jul - Dec, 2018)</strong>
                     <p>Focus: “Visualization of Different Atmospheric variables using OpenGrADS” under the Guidance of Dr. Subrat Kumar Panda, Assistant Professor, Department of Atmospheric Science, Central University of Rajasthan, Rajasthan</p>
                 </li>
             </ul>
